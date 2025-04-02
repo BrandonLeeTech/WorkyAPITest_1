@@ -1,11 +1,11 @@
 """ 註冊商家 """
 
 # pylint: disable = [unused-wildcard-import], [wildcard-import]
+import logging
 import traceback
 import streamlit as st
 from web import *
 from api import *
-# from utils.process_manager import ProcessManager
 
 def register_and_validation(base_url, e_phone, e_name, e_shop):
     """註冊商家 > 通過審核"""
@@ -26,6 +26,22 @@ def register_and_validation(base_url, e_phone, e_name, e_shop):
         traceback.print_exc()
         return {"status": "fail", "msg": "商家註冊失敗"}
 
+
+def repeat_register_and_validation(base_url, e_phone, e_name, e_shop, time):
+    """註冊(多個)商家"""
+    e_phone = int(e_phone)
+    time = int(time)
+
+    # 每次執行後更新 e_phone 和 e_shop, 提取 e_shop 的數字部分增加後重新組合
+    for i in range(time):
+        logging.info("✅ 第 %s 次測試 ---", (i+1))
+        logging.info("E_PHONE: {%s}", e_phone)
+        register_and_validation(base_url, e_phone, e_name, e_shop)
+        e_phone += 1
+        name_prefix = "".join([c for c in e_shop if not c.isdigit()])  # 提取非數字部分
+        name_number = "".join([c for c in e_shop if c.isdigit()])      # 提取數字部分
+        e_shop = f"{name_prefix}{int(name_number or '0') + 1}"         # 數字部分加 1 (為空時回傳 '0')
+    print(f"✅ 總共註冊商家 {time} 個")
 
 
 if __name__ == "__main__":

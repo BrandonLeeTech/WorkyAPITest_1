@@ -1,19 +1,15 @@
 """ 打工端-註冊 """
 import logging
-import os
-from dotenv import load_dotenv
 from tools.response_handler import handle_response
 from tools.pre_request import fetch_response
 from tools.socket_data_manager import SocketDataManager
+from utils.load_json import get_config
 
 
-def l_register(phone):
+def l_register(base_url, phone):
     """註冊 API (POST)"""
     socket_manager = SocketDataManager()
-    access_token = "42931eaaabae4344ee0699dd5c7d3d647c8089c9b2714ad988342599d05dba75|1|qa"  # 初始化
-    env_path = ".env"
-    load_dotenv(env_path)
-    base_url = os.getenv("BASE_URL")
+    access_token = get_config("ACCESS_TOKEN")  # 初始化
     api_url = f"{base_url}/v1/labor/register"
 
     body = {
@@ -33,4 +29,5 @@ def l_register(phone):
 
 if __name__ == "__main__":
     PHONE = "0901090000"
-    l_register(PHONE)
+    BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
+    l_register(BASE_URL, PHONE)

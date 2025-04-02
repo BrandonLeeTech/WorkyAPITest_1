@@ -1,26 +1,19 @@
 """ 商家端-評價 """
 import logging
-import os
-from dotenv import load_dotenv
 from tools.response_handler import handle_response
 from tools.pre_request import fetch_response
 from tools.socket_data_manager import SocketDataManager
 
 
-def e_evaluate(stars):
+def e_evaluate(base_url, stars):
     """評價 API (POST)"""
     socket_manager = SocketDataManager()
-    env_path = ".env"
-    load_dotenv(env_path)
-    base_url = os.getenv("BASE_URL")
     api_url = f"{base_url}/v1/employer/evaluation/evaluate"
     access_token = socket_manager.get_data("E_TOKEN")
-    job_sn = socket_manager.get_data("JOB_SN")
-    new_labor_id = int(socket_manager.get_data("L_labor_id"))
 
     body = {
-        "job_sn": job_sn,
-        "labor_id": new_labor_id,
+        "job_sn": socket_manager.get_data("JOB_SN"),
+        "labor_id": int(socket_manager.get_data("L_labor_id")),
         "professional_stars": stars,
         "attitude_stars": stars,
         "cleanliness_stars": stars,
@@ -36,4 +29,6 @@ def e_evaluate(stars):
 
 
 if __name__ == "__main__":
-    e_evaluate(5)
+    BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
+    STARS = 5
+    e_evaluate(BASE_URL, STARS)

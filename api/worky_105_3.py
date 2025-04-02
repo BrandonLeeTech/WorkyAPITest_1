@@ -3,13 +3,13 @@ import logging
 from tools.response_handler import handle_response
 from tools.pre_request import fetch_response
 from tools.socket_data_manager import SocketDataManager
-from api.worky_303_e import upload_1
+from api.worky_303_e import upload_e
 
 
 def e_shop_validation_request(base_url, e_name):
     """公司送審 API (POST)"""
     file_name = "shop_verify_image.png"
-    upload_1(base_url, "shop_verify_image", file_name)
+    upload_e(base_url, "shop_verify_image", file_name)
 
     socket_manager = SocketDataManager()
     api_url = f"{base_url}/v1/employer/shop/validation/request"

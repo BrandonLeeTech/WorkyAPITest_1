@@ -1,5 +1,6 @@
 """ 工作流程-發工作 """
-# pylint: disable = w0401, w0614, w0611, w0718
+
+# pylint: disable = [unused-wildcard-import], [wildcard-import]
 import os
 import logging
 import traceback
