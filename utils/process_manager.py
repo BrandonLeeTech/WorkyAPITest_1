@@ -9,18 +9,21 @@ import psutil
 
 
 class ProcessManager:
-    """
-    開啟/關閉命令提示視窗，並執行命令
-    """
-
+    """開啟/關閉命令提示視窗，並執行命令"""
     def __init__(self):
         """初始化進程 PID"""
         self.pid = None  # 存儲啟動的終端進程 PID
 
     def open_console(self):
         """另開 `cmd.exe` 視窗運行 start_server.py, return PID"""
-        cmd  = "python start_server.py"
+        base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+        script_path = os.path.join(base_path, '..', 'start_server.py')
+
+        cmd = f'python {script_path}'
+        # cmd = ["python", "start_server.py"]
+
         if sys.platform == "win32":
+            # process = subprocess.Popen(cmd)
             process = subprocess.Popen(
                 ["cmd.exe", "/K", cmd],
                 creationflags=subprocess.CREATE_NEW_CONSOLE
@@ -84,4 +87,4 @@ if __name__ == "__main__":
     process_manager = ProcessManager()
     process_manager.open_console()
     time.sleep(2)
-    process_manager.close_console()  # 結束該 console 及其子進程
+    # process_manager.close_console()  # 結束該 console 及其子進程
