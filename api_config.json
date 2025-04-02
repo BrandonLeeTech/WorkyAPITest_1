@@ -1,0 +1,11 @@
+{
+    "ACCESS_TOKEN": "42931eaaabae4344ee0699dd5c7d3d647c8089c9b2714ad988342599d05dba75|1|qa",
+    "SECRET": "jXBZ95JIP4vQnUtHy5mVy0pVgOgdl2WbVebkbnGZhoGaiDXivWeY8WXAUl06mT7v",
+    "COMMON_VARS": {
+        "platform": "iOS",
+        "sdkVersion": "2.10.0",
+        "udid": "Brandon-WorkyAPITest-11111000001",
+        "userType": 1,
+        "deviceName": "iPhone15"
+    }
+}
