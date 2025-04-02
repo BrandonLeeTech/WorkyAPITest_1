@@ -1,0 +1,8 @@
+Appium-Python-Client==5.0.0
+config==0.5.1
+psutil==6.0.0
+python-dotenv==1.1.0
+Requests==2.32.3
+selenium==4.30.0
+streamlit==1.44.0
+webdriver-manager==4.0.2
