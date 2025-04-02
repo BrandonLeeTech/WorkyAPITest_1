@@ -10,7 +10,6 @@ def test_func(base_url, e_phone):
         worky_103.e_login(base_url, e_phone)
         worky_104.e_login_confirm(base_url, e_phone)
         worky_106.e_profile(base_url)
-        # return {"status": "pass", "msg": "成功"}
         return {"status": "pass"}
 
     except ValueError as e:

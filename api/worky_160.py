@@ -1,18 +1,13 @@
 """ 商家端-查詢信用卡 """
 import logging
-import os
-from dotenv import load_dotenv
 from tools.response_handler import handle_response
 from tools.pre_request import fetch_response
 from tools.socket_data_manager import SocketDataManager
 
 
-def e_credit_card_list():
+def e_credit_card_list(base_url):
     """查詢信用卡 API (GET)"""
     socket_manager = SocketDataManager()
-    env_path = ".env"
-    load_dotenv(env_path)
-    base_url = os.getenv("BASE_URL")
     api_url = f"{base_url}/v1/employer/credit-card/list"
     access_token = socket_manager.get_data("E_TOKEN")
 
@@ -34,4 +29,5 @@ def e_credit_card_list():
 
 
 if __name__ == "__main__":
-    e_credit_card_list()
+    BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
+    e_credit_card_list(BASE_URL)

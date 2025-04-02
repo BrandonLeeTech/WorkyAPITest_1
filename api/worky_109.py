@@ -3,13 +3,13 @@ import logging
 from tools.response_handler import handle_response
 from tools.pre_request import fetch_response
 from tools.socket_data_manager import SocketDataManager
-from api.worky_303_e import upload_1
+from api.worky_303_e import upload_e
 
 
 def e_job_publish(base_url, work_date, start_time, work_hour, custom_name="自定義工作名稱"):
     """發工作 API (POST)"""
     file_name = "job_image.png"
-    upload_1(base_url, "job_image", file_name)
+    upload_e(base_url, "job_image", file_name)
 
     socket_manager = SocketDataManager()
     api_url = f"{base_url}/v1/employer/shop/job/publish"
@@ -22,8 +22,8 @@ def e_job_publish(base_url, work_date, start_time, work_hour, custom_name="自�
         "job_type_level3": 8,
         "schedule_type": 1,
         "start_date_list": [work_date],
-        "start_time_period": start_time,
-        "work_hours": work_hour,
+        "start_time_period": str(start_time),
+        "work_hours": int(work_hour),
         "payment_method_id": 1,
         "rest_hours": 0,
         "recruit_count": 1,
