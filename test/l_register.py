@@ -44,8 +44,8 @@ def repeat_register_and_setting(base_url, l_phone, l_name, time):
 
 if __name__ == "__main__":
     BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
-    L_PHONE = "903310005"
+    L_PHONE = "903310000"
     L_NAME = "測試名"
-    TIME = 1
+    TIME = 2
 
     repeat_register_and_setting(BASE_URL, L_PHONE, L_NAME, TIME)

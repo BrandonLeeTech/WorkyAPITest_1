@@ -76,13 +76,14 @@ def repeat_job_match_single(base_url, e_phone, l_phone, time, work_date, start_t
 
 if __name__ == "__main__":
     BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
-    E_PHONE = "903310005"
-    L_PHONE = "903310005"
+    E_PHONE = "903310010"
+    L_PHONE = "903310000"
     TIME = 1
 
-    WORK_DATE = 20250401
-    START_TIME = "18:00"
+    WORK_DATE = 20250403
+    START_TIME = "20:00"
     WORK_HOUR = 2
     CUSTOM_NAME = "測試工單名稱"
 
-    repeat_job_match_single(BASE_URL, E_PHONE, L_PHONE, TIME, WORK_DATE, START_TIME, WORK_HOUR, CUSTOM_NAME)
+    repeat_job_match(BASE_URL, E_PHONE, L_PHONE, TIME, WORK_DATE, START_TIME, WORK_HOUR, CUSTOM_NAME)
+    # repeat_job_match_single(BASE_URL, E_PHONE, L_PHONE, TIME, WORK_DATE, START_TIME, WORK_HOUR, CUSTOM_NAME)

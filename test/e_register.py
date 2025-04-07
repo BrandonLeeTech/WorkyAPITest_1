@@ -46,8 +46,9 @@ def repeat_register_and_validation(base_url, e_phone, e_name, e_shop, time):
 
 if __name__ == "__main__":
     BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
-    E_PHONE = "903310005"
+    E_PHONE = "903310010"
     E_NAME = "Brandon"
     E_SHOP = "Lee's shop"
+    TIME = 2
 
-    register_and_validation(BASE_URL, E_PHONE, E_NAME, E_SHOP)
+    repeat_register_and_validation(BASE_URL, E_PHONE, E_NAME, E_SHOP, TIME)

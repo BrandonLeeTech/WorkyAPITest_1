@@ -42,7 +42,7 @@ def repeat_setting_account(base_url, e_phone, time):
 
 if __name__ == "__main__":
     BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
-    E_PHONE = "903310005"
-    TIME = 1
+    E_PHONE = "903310010"
+    TIME = 2
 
     repeat_setting_account(BASE_URL, E_PHONE, TIME)
