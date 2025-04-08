@@ -16,9 +16,14 @@ class ProcessManager:
 
     def open_console(self):
         """另開 `cmd.exe` 視窗運行 start_server.py, return PID"""
-        base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
-        script_path = os.path.join(base_path, '..', 'start_server.py')
+        if hasattr(sys, '_MEIPASS'):
+            # 打包執行時：PyInstaller 會將所有檔案解壓到 sys._MEIPASS
+            base_path = sys._MEIPASS
+        else:
+            # 開發環境：直接用當前檔案目錄往上一層找
+            base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
+        script_path = os.path.join(base_path, 'start_server.py')
         cmd = f'python {script_path}'
         # cmd = ["python", "start_server.py"]
 

@@ -2,16 +2,14 @@
 
 import socket
 from multiprocessing import Manager  # 多進程共享數據
-import os
-from dotenv import load_dotenv
+from utils.load_json import get_config
 
 class SocketDataManager:
     """負責處理數據傳遞"""
 
     def __init__(self):
-        load_dotenv()
         self.host = "localhost"
-        self.port = int(os.getenv("SOCKET_PORT"))
+        self.port = int(get_config("SOCKET_PORT"))
         self.manager = Manager()
         self.data_store = self.manager.dict()  # 用字典管理
 
