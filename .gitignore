@@ -1,0 +1,20 @@
+# Pytest cache
+.pytest_cache/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Allure results
+allure-results/
+
+# Virtual environment
+venv311/
+
+# 如果你有 IDE 設定檔，也可加進去
+.vscode/
+.idea/
+.devcontainer
+
+# pyinstaller
+build/
