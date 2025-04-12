@@ -8,6 +8,8 @@ from selenium.webdriver.edge.service import Service
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from utils.action_click import ClickAction
 from utils.action_input import InputAction
+from utils.cleanup_edge import cleanup_edge_processes
+
 
 def shop_audit_passed_h(background, employer_phone):
     """自動適應本機和 Docker/虛擬機環境的 Edge WebDriver"""
@@ -84,9 +86,12 @@ def shop_audit_passed_h(background, employer_phone):
         raise e
 
 if __name__ == "__main__":
-    # base_url = "https://next-staging-v210x.api.staging.worky.com.tw"
-    # backend_url = base_url.replace("api", "backend", 1)
-    backend_url = "https://next-staging-v210x.backend.staging.worky.com.tw"
-    e_phone = "903310002"
-
-    shop_audit_passed_h(backend_url, e_phone)
+    try:
+        backend_url = "https://next-staging-v210x.backend.staging.worky.com.tw"
+        e_phone = "903310002"
+        shop_audit_passed_h(backend_url, e_phone)
+    finally:
+        # 在腳本結束時清理所有 Edge 相關進程，確保環境乾淨
+        print("正在清理測試環境...")
+        cleanup_edge_processes()
+        print("✅ 測試環境已清理完畢。")
