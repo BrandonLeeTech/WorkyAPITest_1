@@ -49,15 +49,22 @@ class Server:
     def start(self):
         """測試前啟動 server"""
         server_thread = threading.Thread(target=self.server_task, daemon=True)
-
         server_thread.start()
         return server_thread
 
+    def is_port_in_use(self):
+        """檢查port是否被占用"""
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            return s.connect_ex((self.host, self.port)) == 0
 
 if __name__ == "__main__":
     server = Server()
-    server.start()
 
+    if server.is_port_in_use():
+        print("⚠️ Socket Server 已經啟動")
+        exit(0)
+
+    server.start()
     try:
         print("伺服器已啟動，按 Ctrl+C 結束...")
         while True:
