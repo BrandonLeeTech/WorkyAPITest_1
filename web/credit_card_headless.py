@@ -10,6 +10,8 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from tools.socket_data_manager import SocketDataManager
 from utils.action_click import ClickAction
 from utils.action_input import InputAction
+from utils.cleanup_edge import cleanup_edge_processes
+
 
 def get_random_value():
     """從字典中隨機選擇一個值並返回"""
@@ -107,4 +109,12 @@ def credit_card_bind_h():
 
 
 if __name__ == "__main__":
-    credit_card_bind_h()
+    try:
+        # 在啟動 WebDriver 之前清理進程
+        cleanup_edge_processes()
+        credit_card_bind_h()
+    finally:
+        # 在腳本結束時清理所有 Edge 相關進程，確保環境乾淨
+        print("正在清理測試環境...")
+        cleanup_edge_processes()
+        print("✅ 測試環境已清理完畢。")

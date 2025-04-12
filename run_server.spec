@@ -26,7 +26,7 @@ def collect_folder(folder):
             collected.append((fullpath, target))
     return collected
 
-for folder in ["utils", "tools", "web", "img", "api", "test"]:
+for folder in ["utils", "tools", "web", "img", "api", "helper"]:
     datas += collect_folder(folder)
 
 
