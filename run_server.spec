@@ -17,22 +17,44 @@ datas += collect_data_files("streamlit")
 datas += copy_metadata("streamlit")
 
 # 定義 Tree-like 行為：直接用 list-comprehension 遞迴加入
-def collect_folder(folder):
+def collect_folder(folder, target_root="."):
     collected = []
     for root, _, files in os.walk(folder):
         for f in files:
             fullpath = os.path.join(root, f)
-            target = os.path.relpath(root, ".")
+            # 判斷是否與目標同一磁碟，否則用絕對路徑相對化
+            try:
+                target = os.path.relpath(root, target_root)
+            except ValueError:
+                # fallback：強制把目錄根設為 folder
+                target = os.path.relpath(root, folder)
             collected.append((fullpath, target))
     return collected
 
 for folder in ["utils", "tools", "web", "img", "api", "helper"]:
     datas += collect_folder(folder)
 
+# 加入 WebDriverManager 的暫存驅動
+datas += collect_folder(os.path.expanduser("~/.wdm"), os.getcwd())
+
 
 hidden_imports = [
     'ipaddress',
-    'streamlit.web.cli'
+    'streamlit.web.cli',
+    'appium',
+    'appium.webdriver',
+    'appium.webdriver.common.mobileby',
+    'selenium',
+    'selenium.webdriver',
+    'selenium.webdriver.edge',
+    'selenium.webdriver.edge.service',
+    'selenium.webdriver.common.by',
+    'selenium.webdriver.common.keys',
+    'selenium.webdriver.common.action_chains',
+    'selenium.webdriver.remote.webdriver',
+    'selenium.webdriver.support.expected_conditions',
+    'webdriver_manager',
+    'webdriver_manager.microsoft'
 ]
 
 

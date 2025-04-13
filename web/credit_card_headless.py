@@ -4,6 +4,7 @@ import random
 import time
 import platform
 import logging
+import tempfile
 from selenium import webdriver
 from selenium.webdriver.edge.service import Service
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
@@ -34,11 +35,15 @@ def credit_card_bind_h():
     credit_card_url = socket_manager.get_data("E_credit_card_url")
 
     options = webdriver.EdgeOptions()
-    options.add_argument("--headless")  # 無頭模式
-    options.add_argument("--inprivate")  # 無痕模式
-    options.add_argument("--disable-extensions")  # 禁用擴展
-    options.add_argument("--remote-debugging-port=9222")  # CI/CD 除錯
-    options.add_argument("--window-size=1920,1080")  # 固定視窗大小
+    options = webdriver.EdgeOptions()
+    options.add_argument("--headless=new")
+    options.add_argument("--disable-software-rasterizer")
+    options.add_argument(f"--user-data-dir={tempfile.mkdtemp()}")
+    options.add_argument("--remote-debugging-port=9222")
+    options.add_argument("--window-size=1920,1080")
+    options.add_argument("--inprivate")
+    options.add_argument("--disable-extensions")
+
 
     # 根據 OS 選擇 WebDriver
     system_name = platform.system()

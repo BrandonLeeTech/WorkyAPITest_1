@@ -3,6 +3,7 @@
 import time
 import platform
 import logging
+import tempfile
 from selenium import webdriver
 from selenium.webdriver.edge.service import Service
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
@@ -14,11 +15,13 @@ from utils.cleanup_edge import cleanup_edge_processes
 def shop_audit_passed_h(background, employer_phone):
     """自動適應本機和 Docker/虛擬機環境的 Edge WebDriver"""
     options = webdriver.EdgeOptions()
-    options.add_argument("--headless")  # 無頭模式
-    options.add_argument("--inprivate")  # 無痕模式
-    options.add_argument("--disable-extensions")  # 禁用擴展
-    options.add_argument("--remote-debugging-port=9222")  # CI/CD 除錯
-    options.add_argument("--window-size=1920,1080")  # 固定視窗大小
+    options.add_argument("--headless=new")
+    options.add_argument("--disable-software-rasterizer")
+    options.add_argument(f"--user-data-dir={tempfile.mkdtemp()}")
+    options.add_argument("--remote-debugging-port=9222")
+    options.add_argument("--window-size=1920,1080")
+    options.add_argument("--inprivate")
+    options.add_argument("--disable-extensions")
 
     # 根據 OS 選擇 WebDriver
     system_name = platform.system()
