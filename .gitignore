@@ -19,6 +19,7 @@ venv311/
 # pyinstaller
 build/
 dist/
+*.exe
 
 # config
 api_config.json
