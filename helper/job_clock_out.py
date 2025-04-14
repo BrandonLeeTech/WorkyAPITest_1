@@ -13,8 +13,8 @@ def job_clock_out(base_url, e_phone, l_phone, job_sn, j_estar, j_lstar):
         worky_203.l_login(base_url, l_phone)
         worky_204.l_login_confirm(base_url, l_phone)
         worky_115_2_0.e_shop_schedule_info(base_url, job_sn)
-        worky_123.e_send_end_code(base_url)
-        worky_214.l_job_clock_out(base_url)
+        worky_123.e_send_end_code(base_url, job_sn)
+        worky_214.l_job_clock_out(base_url, job_sn)
         worky_126_1.e_evaluate(base_url, j_estar)
         worky_219_1.l_evaluate(base_url, j_lstar)
 

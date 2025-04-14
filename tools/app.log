@@ -277,3 +277,111 @@ INFO:root:定位: 審核
 INFO:root:點擊: 審核
 INFO:root:定位: 提交認證
 INFO:root:點擊: 提交認證
+INFO:root:📌 測試 API : 103
+INFO:root:儲存 [E_login_code]:1501
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_login_code"}
+INFO:root:獲取 [E_login_code] => 1501
+INFO:root:📌 測試 API : 104
+INFO:root:儲存 [E_TOKEN]:4f5091db01752671fef5575c5694990d42ceaf704421cc88ea658769e8d0e356|1|staging
+INFO:root:📌 測試 API : 203
+INFO:root:儲存 [L_login_code]:8216
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "L_login_code"}
+INFO:root:獲取 [L_login_code] => 8216
+INFO:root:📌 測試 API : 204
+INFO:root:儲存 [L_TOKEN]:c96c24201bcdde6241d9e2051ddb413baffa73421c6520b8011922f137afd59d|2|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => 4f5091db01752671fef5575c5694990d42ceaf704421cc88ea658769e8d0e356|1|staging
+INFO:root:📌 測試 API : 115-2
+INFO:root:📌 測試 API : 103
+INFO:root:儲存 [E_login_code]:0059
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_login_code"}
+INFO:root:獲取 [E_login_code] => 0059
+INFO:root:📌 測試 API : 104
+INFO:root:儲存 [E_TOKEN]:1cf3590919ce159f6c6bbc56811377e3918203b6c991066ad649adaa9be8c14c|1|staging
+INFO:root:📌 測試 API : 203
+INFO:root:儲存 [L_login_code]:5497
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "L_login_code"}
+INFO:root:獲取 [L_login_code] => 5497
+INFO:root:📌 測試 API : 204
+INFO:root:儲存 [L_TOKEN]:6e543344ef2e9718a64abbdf659bc042e1f872ffcb317ea5b9bc8b093a669d01|2|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => 1cf3590919ce159f6c6bbc56811377e3918203b6c991066ad649adaa9be8c14c|1|staging
+INFO:root:📌 測試 API : 115-2
+INFO:root:📌 測試 API : 103
+INFO:root:儲存 [E_login_code]:4653
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_login_code"}
+INFO:root:獲取 [E_login_code] => 4653
+INFO:root:📌 測試 API : 104
+INFO:root:儲存 [E_TOKEN]:ecf7c216325c5f3e15bfe26359d3c20c8e59bee346d1fec0c4b6bae8e91ebbbe|1|staging
+INFO:root:📌 測試 API : 203
+INFO:root:儲存 [L_login_code]:6944
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "L_login_code"}
+INFO:root:獲取 [L_login_code] => 6944
+INFO:root:📌 測試 API : 204
+INFO:root:儲存 [L_TOKEN]:b8801b8d34f9b28201bc5f7c2c9e991ebbd4a320276fa591d22c4f3e23770a11|2|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => ecf7c216325c5f3e15bfe26359d3c20c8e59bee346d1fec0c4b6bae8e91ebbbe|1|staging
+INFO:root:📌 測試 API : 115-2
+INFO:root:儲存 [JOB_start_code]:5391
+INFO:root:儲存 [JOB_end_code]:1947
+INFO:root:儲存 [L_labor_id]:988
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => ecf7c216325c5f3e15bfe26359d3c20c8e59bee346d1fec0c4b6bae8e91ebbbe|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "JOB_SN"}
+INFO:root:獲取 [JOB_SN] => 17446119930001
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "L_labor_id"}
+INFO:root:獲取 [L_labor_id] => 988
+INFO:root:📌 測試 API : 122
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "L_TOKEN"}
+INFO:root:獲取 [L_TOKEN] => b8801b8d34f9b28201bc5f7c2c9e991ebbd4a320276fa591d22c4f3e23770a11|2|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "JOB_SN"}
+INFO:root:獲取 [JOB_SN] => 17446119930001
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "JOB_start_code"}
+INFO:root:獲取 [JOB_start_code] => 5391
+INFO:root:📌 測試 API : 213
+INFO:root:📌 測試 API : 103
+INFO:root:儲存 [E_login_code]:8707
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_login_code"}
+INFO:root:獲取 [E_login_code] => 8707
+INFO:root:📌 測試 API : 104
+INFO:root:儲存 [E_TOKEN]:364c252975c89bca3a6683e9bcd949580c3d312dbcd500e4c2d1f2de09304089|1|staging
+INFO:root:📌 測試 API : 203
+INFO:root:儲存 [L_login_code]:0751
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "L_login_code"}
+INFO:root:獲取 [L_login_code] => 0751
+INFO:root:📌 測試 API : 204
+INFO:root:儲存 [L_TOKEN]:8d92b44f3114a4a49587cf196652cc05ff835fbfabd6209363be57bf9f936892|2|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => 364c252975c89bca3a6683e9bcd949580c3d312dbcd500e4c2d1f2de09304089|1|staging
+INFO:root:📌 測試 API : 115-2
+INFO:root:儲存 [JOB_start_code]:5391
+INFO:root:儲存 [JOB_end_code]:1947
+INFO:root:儲存 [L_labor_id]:988
+INFO:root:📌 測試 API : 103
+INFO:root:儲存 [E_login_code]:8982
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_login_code"}
+INFO:root:獲取 [E_login_code] => 8982
+INFO:root:📌 測試 API : 104
+INFO:root:儲存 [E_TOKEN]:946ad7d0b740dc9bf737c5b01cabdb405e29c257c669d178ea842f2566573fbf|1|staging
+INFO:root:📌 測試 API : 203
+INFO:root:儲存 [L_login_code]:9085
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "L_login_code"}
+INFO:root:獲取 [L_login_code] => 9085
+INFO:root:📌 測試 API : 204
+INFO:root:儲存 [L_TOKEN]:3f461ebbec49e146b032c66f780eb94d3ad2172901a29c193532da85276b268a|2|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => 946ad7d0b740dc9bf737c5b01cabdb405e29c257c669d178ea842f2566573fbf|1|staging
+INFO:root:📌 測試 API : 115-2
+INFO:root:儲存 [JOB_start_code]:5391
+INFO:root:儲存 [JOB_end_code]:1947
+INFO:root:儲存 [L_labor_id]:988
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => 946ad7d0b740dc9bf737c5b01cabdb405e29c257c669d178ea842f2566573fbf|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "L_labor_id"}
+INFO:root:獲取 [L_labor_id] => 988
+INFO:root:📌 測試 API : 122
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "L_TOKEN"}
+INFO:root:獲取 [L_TOKEN] => 3f461ebbec49e146b032c66f780eb94d3ad2172901a29c193532da85276b268a|2|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "JOB_start_code"}
+INFO:root:獲取 [JOB_start_code] => 5391
+INFO:root:📌 測試 API : 213

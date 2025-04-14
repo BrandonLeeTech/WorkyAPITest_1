@@ -5,14 +5,14 @@ from tools.pre_request import fetch_response
 from tools.socket_data_manager import SocketDataManager
 
 
-def e_send_end_code(base_url):
+def e_send_end_code(base_url, job_sn):
     """打下班碼 API (POST)"""
     socket_manager = SocketDataManager()
     api_url = f"{base_url}/v1/employer/labor/send-end-code"
     access_token = socket_manager.get_data("E_TOKEN")
 
     body = {
-        "job_sn": socket_manager.get_data("JOB_SN"),
+        "job_sn": str(job_sn),
         "labor_id": int(socket_manager.get_data("L_labor_id"))
     }
 
@@ -22,8 +22,3 @@ def e_send_end_code(base_url):
         handle_response(response)
     except Exception as e:
         raise e
-
-
-if __name__ == "__main__":
-    BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
-    e_send_end_code(BASE_URL)

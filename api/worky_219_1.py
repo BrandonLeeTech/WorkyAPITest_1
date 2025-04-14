@@ -5,14 +5,14 @@ from tools.response_handler import handle_response
 from tools.socket_data_manager import SocketDataManager
 
 
-def l_evaluate(base_url, stars):
+def l_evaluate(base_url, job_sn, stars):
     """評價 API (POST)"""
     socket_manager = SocketDataManager()
     api_url = f"{base_url}/v1/labor/evaluation/evaluate"
     access_token = socket_manager.get_data("L_TOKEN")
 
     body = {
-        "job_sn": socket_manager.get_data("JOB_SN"),
+        "job_sn": str(job_sn),
         "atmosphere_stars": stars,
         "environment_stars": stars,
         "communication_stars": stars,
@@ -26,8 +26,3 @@ def l_evaluate(base_url, stars):
     except Exception as e:
         raise e
 
-
-if __name__ == "__main__":
-    BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
-    STARS = 5
-    l_evaluate(BASE_URL, STARS)
