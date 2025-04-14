@@ -2,16 +2,12 @@
 
 import random
 import time
-import platform
 import logging
-import tempfile
-from selenium import webdriver
-from selenium.webdriver.edge.service import Service
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from tools.socket_data_manager import SocketDataManager
 from utils.action_click import ClickAction
 from utils.action_input import InputAction
 from utils.cleanup_edge import cleanup_edge_processes
+from web.webdriver_option import launch_edge_driver
 
 
 def get_random_value():
@@ -33,39 +29,7 @@ def credit_card_bind_h():
     """資訊查詢 API (GET)"""
     socket_manager = SocketDataManager()
     credit_card_url = socket_manager.get_data("E_credit_card_url")
-
-    options = webdriver.EdgeOptions()
-    options = webdriver.EdgeOptions()
-    options.add_argument("--headless=new")
-    options.add_argument("--disable-software-rasterizer")
-    options.add_argument(f"--user-data-dir={tempfile.mkdtemp()}")
-    options.add_argument("--remote-debugging-port=9222")
-    options.add_argument("--window-size=1920,1080")
-    options.add_argument("--inprivate")
-    options.add_argument("--disable-extensions")
-
-
-    # 根據 OS 選擇 WebDriver
-    system_name = platform.system()
-    if system_name in ["Windows", "Darwin"]:
-        print("Windows/macOS 環境：使用 EdgeChromiumDriverManager")
-        options.add_argument("--disable-gpu")  # Windows 必須關閉 GPU
-        service = Service(EdgeChromiumDriverManager().install())
-        service.log_output = None  # 停止 Edge 內部日誌，但 WebDriver 步驟仍然會輸出
-        service.log_level = 1  # INFO 級別
-        driver = webdriver.Edge(service=service, options=options)
-
-    else: # Linux / Docker / CI/CD
-        print("Linux 環境：使用 Remote WebDriver")
-        options.add_argument("--no-sandbox")  # 避免 Docker 權限問題
-        options.add_argument("--disable-dev-shm-usage")  # 避免共享記憶體不足
-        options.add_argument("--disable-software-rasterizer")  # 防止軟體渲染錯誤
-        driver = webdriver.Remote(
-            command_executor="http://selenium_edge:4444/wd/hub",  # Selenium Grid / Docker
-            options=options,
-        )
-    print("✅ WebDriver 啟動成功！")
-
+    driver = launch_edge_driver()
     click_action = ClickAction(driver)
     input_action = InputAction(driver)
     try:

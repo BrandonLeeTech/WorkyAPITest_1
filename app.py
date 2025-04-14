@@ -2,39 +2,7 @@
 import os
 import traceback
 import streamlit as st
-from helper.e_account import setting_account
-from helper.e_register import register_and_validation
-from helper.l_register import register_and_setting
-
-
-# ----- 模組配置（可移到外部配置文件） -----
-SCRIPTS = {
-    "商家_設置帳務": {
-        "function": setting_account,
-        "params": {
-            "base_url": ["https://next-staging-v210x.api.staging.worky.com.tw"],
-            "e_phone": "text",
-        }
-    },
-    "商家_註冊": {
-        "function": register_and_validation,
-        "params": {
-            "base_url": ["https://next-staging-v210x.api.staging.worky.com.tw"],
-            "e_phone": "text",
-            "e_name": "text",
-            "e_shop": "text",
-        }
-    },
-    "打工_註冊": {
-        "function": register_and_setting,
-        "params": {
-            "base_url": ["https://next-staging-v210x.api.staging.worky.com.tw"],
-            "l_phone": "text",
-            "l_name": "text",
-        }
-    },
-}
-
+from config.scripts_config import SCRIPTS
 
 class StreamlitApp:
     """streamlit 網頁部屬設定"""
@@ -126,6 +94,7 @@ class StreamlitApp:
     def run(self):
         """應用程式入口"""
         self.render_ui()
+
 
 # ----- 執行應用程式 -----
 if __name__ == "__main__":

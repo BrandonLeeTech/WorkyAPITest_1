@@ -75,3 +75,205 @@ INFO:root:📌 測試 API : 205-1
 INFO:root:送出指令: {"action": "GET_DATA", "tag": "L_TOKEN"}
 INFO:root:獲取 [L_TOKEN] => 92bf6cc12b37d88f94cf94089bdbb561ec3ebe807d5362b981ed2344a63c2c54|2|staging
 INFO:root:📌 測試 API : 205-2
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:打工夥伴審核
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: menu 層級
+INFO:root:點擊: menu 層級
+INFO:root:定位: 打工夥伴管理
+ERROR:root:[301] 無法定位元素的 Xpath: //p[text()='打工夥伴管理'] 
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:打工夥伴審核
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: menu 層級
+INFO:root:點擊: menu 層級
+INFO:root:定位: 打工夥伴管理
+ERROR:root:[301] 無法定位元素的 Xpath: //p[text()='打工夥伴管理'] 
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:打工夥伴審核
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 打工夥伴
+ERROR:root:[301] 無法定位元素的 Xpath: //a[contains(text(),'打工夥伴')]/following-sibling::i 
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:打工夥伴審核
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 打工夥伴
+ERROR:root:[301] 無法定位元素的 Xpath: //a[contains(text(),'打工夥伴')] 
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:打工夥伴審核
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 打工夥伴
+INFO:root:點擊: 打工夥伴
+INFO:root:定位: 打工夥伴管理
+ERROR:root:[301] 無法定位元素的 Xpath: //p[text()='打工夥伴管理'] 
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:打工夥伴審核
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 打工夥伴
+INFO:root:點擊: 打工夥伴
+INFO:root:定位: 打工夥伴管理
+INFO:root:點擊: 打工夥伴管理
+INFO:root:定位: 
+INFO:root:輸入: 904140000
+INFO:root:定位: 查詢
+INFO:root:點擊: 查詢
+INFO:root:定位: 審核
+ERROR:root:[301] 無法定位元素的 ID: //span[normalize-space()='待認證'] 
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:打工夥伴審核
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 打工夥伴
+INFO:root:點擊: 打工夥伴
+INFO:root:定位: 打工夥伴管理
+INFO:root:點擊: 打工夥伴管理
+INFO:root:定位: 
+INFO:root:輸入: 904140000
+INFO:root:定位: 查詢
+INFO:root:點擊: 查詢
+INFO:root:定位: 審核
+ERROR:root:[301] 無法定位元素的 ID: //span[normalize-space(text())='待認證'] 
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:打工夥伴審核
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 打工夥伴
+INFO:root:點擊: 打工夥伴
+INFO:root:定位: 打工夥伴管理
+INFO:root:點擊: 打工夥伴管理
+INFO:root:定位: 
+INFO:root:輸入: 904140000
+INFO:root:定位: 查詢
+INFO:root:點擊: 查詢
+INFO:root:定位: 審核
+INFO:root:點擊: 審核
+INFO:root:定位: 提交認證
+ERROR:root:[301] 無法定位元素的 Xpath: btnValidateSubmit 
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:打工夥伴審核
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 打工夥伴
+INFO:root:點擊: 打工夥伴
+INFO:root:定位: 打工夥伴管理
+INFO:root:點擊: 打工夥伴管理
+INFO:root:定位: 
+INFO:root:輸入: 904140000
+INFO:root:定位: 查詢
+INFO:root:點擊: 查詢
+INFO:root:定位: 審核
+INFO:root:點擊: 審核
+INFO:root:定位: 提交認證
+INFO:root:點擊: 提交認證
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:打工夥伴審核
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 打工夥伴
+INFO:root:點擊: 打工夥伴
+INFO:root:定位: 打工夥伴管理
+INFO:root:點擊: 打工夥伴管理
+INFO:root:定位: 
+INFO:root:輸入: 904140001
+INFO:root:定位: 查詢
+INFO:root:點擊: 查詢
+INFO:root:定位: 審核
+INFO:root:點擊: 審核
+INFO:root:定位: 提交認證
+INFO:root:點擊: 提交認證

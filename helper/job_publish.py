@@ -1,38 +1,46 @@
 """ 工作流程-發工作 """
 
 # pylint: disable = [unused-wildcard-import], [wildcard-import]
-import os
 import logging
 import traceback
-from dotenv import load_dotenv
+import streamlit as st
 from api import *
-from config.logger_config import LoggerConfig
 
-def job_publish(e_phone, wait, pay):
+
+def job_publish(base_url, e_phone, work_date, start_time, work_hour, custom_name):
     """發工作"""
-    try:
-        worky_103.e_login(e_phone)
-        worky_104.e_login_confirm(e_phone)
-        worky_106.e_profile()
-        # worky_api_109.e_job_publish(wait, pay)
-        worky_api_109_1.e_job_publish()
-    except Exception as e:
-        print(f"❌ 發生例外: {e}")
-        traceback.print_exc()
+    worky_103.e_login(base_url, e_phone)
+    worky_104.e_login_confirm(base_url, e_phone)
+    worky_106.e_profile(base_url)
+    worky_109.e_job_publish(base_url, work_date, start_time, work_hour, custom_name)
+    return {"status": "pass", "msg": "媒合成功"}
 
-def repeat_job_publish():
+
+def repeat_job_publish(base_url, time, e_phone, work_date, start_time, work_hour, custom_name):
     """商家發多個工作"""
-    load_dotenv()
+    work_date = int(work_date)
+    time = int(time)
 
-    e_phone = os.getenv("E_PHONE")
-    wait = os.getenv("J_WAIT")
-    pay = os.getenv("J_PAY")
-    time = int(os.getenv("REC_TIME"))
-
-    for i in range(time):
-        logging.info("✅ 第 %s 次測試 ---", (i+1))
-        job_publish(e_phone, wait, pay)
-
+    try:
+        for i in range(time):
+            logging.info("✅ 第 %s 次測試 ---", (i+1))
+            job_publish(base_url, e_phone, work_date, start_time, work_hour, custom_name)
+            return {"status": "pass", "msg": "媒合成功"}
+    except ValueError as e:
+        st.error(f"輸入錯誤 : {e}")
+        return {"status": "fail", "msg": "媒合失敗"}
+    except Exception as e: # pylint: disable = [broad-exception-caught]
+        st.error(f"未預期錯誤，檢查 API LOG : {e}")
+        traceback.print_exc()
+        return {"status": "fail", "msg": "媒合失敗"}
 
 if __name__ == "__main__":
-    repeat_job_publish()
+    BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
+    E_PHONE = "903310010"
+    TIME = 1
+
+    WORK_DATE = 20250403
+    START_TIME = "20:00"
+    WORK_HOUR = 2
+    CUSTOM_NAME = "測試工單名稱"
+    repeat_job_publish(BASE_URL, TIME, E_PHONE, WORK_DATE, START_TIME, WORK_HOUR, CUSTOM_NAME)

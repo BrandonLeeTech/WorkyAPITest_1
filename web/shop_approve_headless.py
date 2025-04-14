@@ -1,49 +1,16 @@
 """ [後台] 審核通過 """
 
 import time
-import platform
 import logging
-import tempfile
-from selenium import webdriver
-from selenium.webdriver.edge.service import Service
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from utils.action_click import ClickAction
 from utils.action_input import InputAction
 from utils.cleanup_edge import cleanup_edge_processes
+from web.webdriver_option import launch_edge_driver
 
 
 def shop_audit_passed_h(background, employer_phone):
     """自動適應本機和 Docker/虛擬機環境的 Edge WebDriver"""
-    options = webdriver.EdgeOptions()
-    options.add_argument("--headless=new")
-    options.add_argument("--disable-software-rasterizer")
-    options.add_argument(f"--user-data-dir={tempfile.mkdtemp()}")
-    options.add_argument("--remote-debugging-port=9222")
-    options.add_argument("--window-size=1920,1080")
-    options.add_argument("--inprivate")
-    options.add_argument("--disable-extensions")
-
-    # 根據 OS 選擇 WebDriver
-    system_name = platform.system()
-    if system_name in ["Windows", "Darwin"]:
-        print("Windows/macOS 環境：使用 EdgeChromiumDriverManager")
-        options.add_argument("--disable-gpu")  # Windows 必須關閉 GPU
-        service = Service(EdgeChromiumDriverManager().install())
-        service.log_output = None  # 停止 Edge 內部日誌，但 WebDriver 步驟仍然會輸出
-        service.log_level = 1  # INFO 級別
-        driver = webdriver.Edge(service=service, options=options)
-
-    else: # Linux / Docker / CI/CD
-        print("Linux 環境：使用 Remote WebDriver")
-        options.add_argument("--no-sandbox")  # 避免 Docker 權限問題
-        options.add_argument("--disable-dev-shm-usage")  # 避免共享記憶體不足
-        options.add_argument("--disable-software-rasterizer")  # 防止軟體渲染錯誤
-        driver = webdriver.Remote(
-            command_executor="http://selenium_edge:4444/wd/hub",  # Selenium Grid / Docker
-            options=options
-        )
-    print("✅ WebDriver 啟動成功！")
-
+    driver = launch_edge_driver()
     click_action = ClickAction(driver)
     input_action = InputAction(driver)
     try:
@@ -93,9 +60,9 @@ if __name__ == "__main__":
     try:
         # 在啟動 WebDriver 之前清理進程
         cleanup_edge_processes()
-        backend_url = "https://next-staging-v210x.backend.staging.worky.com.tw"
-        e_phone = "903310002"
-        shop_audit_passed_h(backend_url, e_phone)
+        URL = "https://next-staging-v210x.backend.staging.worky.com.tw"
+        PHONE = "904120001"
+        shop_audit_passed_h(URL, PHONE)
     finally:
         # 在腳本結束時清理所有 Edge 相關進程，確保環境乾淨
         print("正在清理測試環境...")

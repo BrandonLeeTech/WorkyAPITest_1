@@ -10,6 +10,7 @@ datas = [
     ("start_server.py", "."),
     ("api_config.json", "."),
     ('app.log', '.'),
+    ('config/*.py', 'config'),
     ("C:/Users/brandon.lee/.conda/envs/py311/Lib/site-packages/streamlit/runtime", "streamlit/runtime"),
 ]
 
