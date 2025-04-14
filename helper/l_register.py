@@ -16,7 +16,7 @@ def register_and_setting(base_url, l_phone, l_name):
     worky_204.l_login_confirm(base_url, l_phone)
     worky_205_1.l_update(base_url, l_name)
     worky_205_2.l_update_preference(base_url)
-    # labor_verify(base_url, l_phone)
+    labor_verify(base_url, l_phone)
 
 
 def repeat_register_and_setting(base_url, time, l_phone, l_name):

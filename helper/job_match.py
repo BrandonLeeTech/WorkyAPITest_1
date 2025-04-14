@@ -31,7 +31,7 @@ def repeat_job_match_single(base_url, time, e_phone, l_phone, work_date, start_t
             worky_210_1.l_job_match_apply(base_url)
             worky_120_1.e_job_match_accept(base_url)
             work_date += 1
-        return {"status": "pass", "msg": "媒合並發工作成功"}
+        return {"status": "pass", "msg": "媒合成功，需檢查打工認證跟商家付款"}
     except ValueError as e:
         st.error(f"輸入錯誤 : {e}")
         return {"status": "fail", "msg": "媒合並發工作失敗"}

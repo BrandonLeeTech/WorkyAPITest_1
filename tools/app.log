@@ -855,3 +855,27 @@ INFO:root:送出指令: {"action": "GET_DATA", "tag": "shop_company_logo_image"}
 INFO:root:[GET] : shop_company_logo_image
 INFO:root:獲取 [shop_company_logo_image] => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-company-logo-images/3c/3c312b39613c2da1ab5748be579ca6dc.png
 INFO:root:📌 測試 API : 105-1
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 打工夥伴
+INFO:root:點擊: 打工夥伴
+INFO:root:定位: 打工夥伴管理
+INFO:root:點擊: 打工夥伴管理
+INFO:root:定位: 
+INFO:root:輸入: 0904140006
+INFO:root:定位: 查詢
+INFO:root:點擊: 查詢
+INFO:root:定位: 審核
+INFO:root:點擊: 審核
+INFO:root:定位: 提交認證
+INFO:root:點擊: 提交認證

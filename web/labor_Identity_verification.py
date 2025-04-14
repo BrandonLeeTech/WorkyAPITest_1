@@ -52,5 +52,5 @@ def labor_verify(background, labor_phone):
 
 if __name__ == "__main__":
     URL = "https://next-staging-v210x.backend.staging.worky.com.tw"
-    PHONE = "904140001"
+    PHONE = "0904140006"
     labor_verify(URL, PHONE)

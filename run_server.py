@@ -2,7 +2,6 @@
 
 import os
 import sys
-import subprocess
 import streamlit.web.cli as stcli
 from start_server import Server
 
