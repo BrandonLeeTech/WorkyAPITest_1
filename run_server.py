@@ -4,6 +4,7 @@ import os
 import sys
 import subprocess
 import streamlit.web.cli as stcli
+from start_server import Server
 
 def resolve_path(file_name):
     """根據根目錄位置來啟動"""
@@ -13,13 +14,12 @@ def resolve_path(file_name):
 
 if __name__ == "__main__":
     # socket 4000
-    script_path = resolve_path("start_server.py")
-    CMD = f'python {script_path}'
-    subprocess.Popen(
-        ["cmd.exe", "/k", CMD],
-        creationflags=subprocess.CREATE_NEW_CONSOLE
-    )
-    print("✅ 啟動 socket server")
+    server = Server()
+    if server.is_port_in_use():
+        print("⚠️ Socket Server 已經啟動")
+    else:
+        server.start()
+        print("✅ 啟動 socket server")
 
     # streamlit 8501
     sys.argv = [
