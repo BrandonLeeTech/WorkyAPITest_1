@@ -6,7 +6,7 @@ import traceback
 import streamlit as st
 from api import *
 from utils.chinese_to_arabic import increment_chinese_name
-from web.labor_identity_verification import labor_verify
+from web import *
 
 def register_and_setting(base_url, l_phone, l_name):
     """註冊打工>設定個人資訊"""
@@ -17,7 +17,7 @@ def register_and_setting(base_url, l_phone, l_name):
         worky_204.l_login_confirm(base_url, l_phone)
         worky_205_1.l_update(base_url, l_name)
         worky_205_2.l_update_preference(base_url)
-        labor_verify(base_url, l_phone)
+        # labor_verify(base_url, l_phone)
         return {"status": "pass", "msg": "打工註冊成功"}
 
     except ValueError as e:
@@ -46,8 +46,8 @@ def repeat_register_and_setting(base_url, l_phone, l_name, time):
 
 if __name__ == "__main__":
     BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
-    L_PHONE = "903310000"
-    L_NAME = "測試名"
+    L_PHONE = "0904140004"
+    L_NAME = "測試4"
     TIME = 2
 
     repeat_register_and_setting(BASE_URL, L_PHONE, L_NAME, TIME)
