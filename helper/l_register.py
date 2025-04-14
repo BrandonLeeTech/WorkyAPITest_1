@@ -10,14 +10,29 @@ from web import *
 
 def register_and_setting(base_url, l_phone, l_name):
     """註冊打工>設定個人資訊"""
+    worky_201.l_register(base_url, l_phone)
+    worky_202.l_register_confirm(base_url, l_phone)
+    worky_203.l_login(base_url, l_phone)
+    worky_204.l_login_confirm(base_url, l_phone)
+    worky_205_1.l_update(base_url, l_name)
+    worky_205_2.l_update_preference(base_url)
+    # labor_verify(base_url, l_phone)
+
+
+def repeat_register_and_setting(base_url, time, l_phone, l_name):
+    """註冊(多個)打工"""
+    l_phone = int(l_phone)
+    time = int(time)
+
     try:
-        worky_201.l_register(base_url, l_phone)
-        worky_202.l_register_confirm(base_url, l_phone)
-        worky_203.l_login(base_url, l_phone)
-        worky_204.l_login_confirm(base_url, l_phone)
-        worky_205_1.l_update(base_url, l_name)
-        worky_205_2.l_update_preference(base_url)
-        # labor_verify(base_url, l_phone)
+        # 每次執行後更新 l_phone 和 labor_name
+        for i in range(time):
+            logging.info("✅ 第 %s 次測試 ---", (i+1))
+            logging.info("L_PHONE: {%s}", l_phone)
+            register_and_setting(base_url, l_phone, l_name)
+            l_phone += 1
+            # 如果只能輸入中文用這個函數加一
+            l_name = increment_chinese_name(l_name)
         return {"status": "pass", "msg": "打工註冊成功"}
 
     except ValueError as e:
@@ -27,22 +42,6 @@ def register_and_setting(base_url, l_phone, l_name):
         st.error(f"未預期錯誤，檢查 API LOG : {e}")
         traceback.print_exc()
         return {"status": "fail", "msg": "打工註冊失敗"}
-
-
-def repeat_register_and_setting(base_url, l_phone, l_name, time):
-    """註冊(多個)打工"""
-    l_phone = int(l_phone)
-    time = int(time)
-
-    # 每次執行後更新 l_phone 和 labor_name
-    for i in range(time):
-        logging.info("✅ 第 %s 次測試 ---", (i+1))
-        logging.info("L_PHONE: {%s}", l_phone)
-        register_and_setting(base_url, l_phone, l_name)
-        l_phone += 1
-        l_name = increment_chinese_name(l_name) # 如果只能輸入中文可以用這個函數加一
-    print(f"✅ 總共註冊打工 {time} 個")
-
 
 if __name__ == "__main__":
     BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"

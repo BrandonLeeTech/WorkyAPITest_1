@@ -385,3 +385,293 @@ INFO:root:獲取 [L_TOKEN] => 3f461ebbec49e146b032c66f780eb94d3ad2172901a29c1935
 INFO:root:送出指令: {"action": "GET_DATA", "tag": "JOB_start_code"}
 INFO:root:獲取 [JOB_start_code] => 5391
 INFO:root:📌 測試 API : 213
+INFO:root:✅ 第 1 次測試 ---
+INFO:root:E_PHONE: {904140008}
+INFO:root:📌 測試 API : 101
+ERROR:root:無法連接到伺服器 localhost:4000: [WinError 10061] 無法連線，因為目標電腦拒絕連線。
+INFO:root:✅ 第 1 次測試 ---
+INFO:root:E_PHONE: {904140008}
+INFO:root:📌 測試 API : 101
+INFO:root:儲存 [E_register_code]:None
+INFO:root:[SET] : E_register_code => None
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_register_code"}
+INFO:root:[GET] : E_register_code
+INFO:root:獲取 [E_register_code] => None
+INFO:root:📌 測試 API : 102
+INFO:root:✅ 第 1 次測試 ---
+INFO:root:E_PHONE: {904140008}
+INFO:root:📌 測試 API : 101
+INFO:root:儲存 [E_register_code]:None
+INFO:root:[SET] : E_register_code => None
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_register_code"}
+INFO:root:[GET] : E_register_code
+INFO:root:獲取 [E_register_code] => None
+INFO:root:📌 測試 API : 102
+INFO:root:✅ 第 1 次測試 ---
+INFO:root:E_PHONE: {904140008}
+INFO:root:📌 測試 API : 101
+INFO:root:儲存 [E_register_code]:None
+INFO:root:[SET] : E_register_code => None
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_register_code"}
+INFO:root:[GET] : E_register_code
+INFO:root:獲取 [E_register_code] => None
+INFO:root:📌 測試 API : 102
+INFO:root:✅ 第 1 次測試 ---
+INFO:root:E_PHONE: {904140009}
+INFO:root:📌 測試 API : 101
+INFO:root:儲存 [E_register_code]:6208
+INFO:root:[SET] : E_register_code => 6208
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_register_code"}
+INFO:root:[GET] : E_register_code
+INFO:root:獲取 [E_register_code] => 6208
+INFO:root:📌 測試 API : 102
+INFO:root:儲存 [E_TOKEN]:c0c26d568cbd3e876e32a307671a8c8a753b85a4ddd339564a5a11e263bb26a2|1|staging
+INFO:root:[SET] : E_TOKEN => c0c26d568cbd3e876e32a307671a8c8a753b85a4ddd339564a5a11e263bb26a2|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => c0c26d568cbd3e876e32a307671a8c8a753b85a4ddd339564a5a11e263bb26a2|1|staging
+INFO:root:📌 測試 API : 303
+INFO:root:[SET] : shop_company_logo_image => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-company-logo-images/6a/6af0f99b325e2ad683aee50462074ab1.png
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => c0c26d568cbd3e876e32a307671a8c8a753b85a4ddd339564a5a11e263bb26a2|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "shop_company_logo_image"}
+INFO:root:[GET] : shop_company_logo_image
+INFO:root:獲取 [shop_company_logo_image] => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-company-logo-images/6a/6af0f99b325e2ad683aee50462074ab1.png
+INFO:root:📌 測試 API : 105-1
+INFO:root:儲存 [E_shop_id]:1427
+INFO:root:[SET] : E_shop_id => 1427
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => c0c26d568cbd3e876e32a307671a8c8a753b85a4ddd339564a5a11e263bb26a2|1|staging
+INFO:root:📌 測試 API : 303
+INFO:root:儲存 [shop_verify_image]:https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-verify-images/0b/0b91b48d5beb1db9d4c67006ebd139a3.png
+INFO:root:[SET] : shop_verify_image => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-verify-images/0b/0b91b48d5beb1db9d4c67006ebd139a3.png
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => c0c26d568cbd3e876e32a307671a8c8a753b85a4ddd339564a5a11e263bb26a2|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_shop_id"}
+INFO:root:[GET] : E_shop_id
+INFO:root:獲取 [E_shop_id] => 1427
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "shop_verify_image"}
+INFO:root:[GET] : shop_verify_image
+INFO:root:獲取 [shop_verify_image] => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-verify-images/0b/0b91b48d5beb1db9d4c67006ebd139a3.png
+INFO:root:📌 測試 API : 105-3
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:測試 商家審核
+INFO:root:[pages/other/shop_approve_headless.py]
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 商家管理
+INFO:root:點擊: 商家管理
+INFO:root:定位: 店鋪管理
+INFO:root:點擊: 店鋪管理
+INFO:root:定位: 
+INFO:root:輸入: 904140009
+INFO:root:定位: 查詢
+INFO:root:點擊: 查詢
+INFO:root:定位: 審核
+INFO:root:點擊: 審核
+INFO:root:定位: 通過
+INFO:root:點擊: 通過
+INFO:root:定位: 確定
+INFO:root:點擊: 確定
+INFO:root:✅ 第 1 次測試 ---
+INFO:root:E_PHONE: {904140010}
+INFO:root:📌 測試 API : 101
+INFO:root:儲存 [E_register_code]:8188
+INFO:root:[SET] : E_register_code => 8188
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_register_code"}
+INFO:root:[GET] : E_register_code
+INFO:root:獲取 [E_register_code] => 8188
+INFO:root:📌 測試 API : 102
+INFO:root:儲存 [E_TOKEN]:7792deb76f13cd638dbcbf23e761b60af1f228a75ab283a2cef64fdf2b4318dc|1|staging
+
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => 7792deb76f13cd638dbcbf23e761b60af1f228a75ab283a2cef64fdf2b4318dc|1|staging
+INFO:root:📌 測試 API : 303
+INFO:root:[SET] : shop_company_logo_image => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-company-logo-images/3c/3ce2b65019dd1e9e1b26b812a6798596.png
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => 7792deb76f13cd638dbcbf23e761b60af1f228a75ab283a2cef64fdf2b4318dc|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "shop_company_logo_image"}
+INFO:root:[GET] : shop_company_logo_image
+INFO:root:獲取 [shop_company_logo_image] => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-company-logo-images/3c/3ce2b65019dd1e9e1b26b812a6798596.png
+INFO:root:📌 測試 API : 105-1
+INFO:root:儲存 [E_shop_id]:1428
+INFO:root:[SET] : E_shop_id => 1428
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => 7792deb76f13cd638dbcbf23e761b60af1f228a75ab283a2cef64fdf2b4318dc|1|staging
+INFO:root:📌 測試 API : 303
+INFO:root:[SET] : shop_verify_image => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-verify-images/35/359ddd7cf20aa42776278505231a74d4.png
+INFO:root:儲存 [shop_verify_image]:https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-verify-images/35/359ddd7cf20aa42776278505231a74d4.png
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => 7792deb76f13cd638dbcbf23e761b60af1f228a75ab283a2cef64fdf2b4318dc|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_shop_id"}
+INFO:root:[GET] : E_shop_id
+INFO:root:獲取 [E_shop_id] => 1428
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "shop_verify_image"}
+INFO:root:[GET] : shop_verify_image
+INFO:root:獲取 [shop_verify_image] => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-verify-images/35/359ddd7cf20aa42776278505231a74d4.png
+INFO:root:📌 測試 API : 105-3
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:測試 商家審核
+INFO:root:[pages/other/shop_approve_headless.py]
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 商家管理
+INFO:root:點擊: 商家管理
+INFO:root:定位: 店鋪管理
+INFO:root:點擊: 店鋪管理
+INFO:root:定位: 
+INFO:root:輸入: 904140010
+INFO:root:定位: 查詢
+INFO:root:點擊: 查詢
+INFO:root:定位: 審核
+INFO:root:點擊: 審核
+INFO:root:定位: 通過
+INFO:root:點擊: 通過
+INFO:root:定位: 確定
+INFO:root:點擊: 確定
+INFO:root:✅ 第 2 次測試 ---
+INFO:root:E_PHONE: {904140011}
+INFO:root:📌 測試 API : 101
+INFO:root:儲存 [E_register_code]:6909
+INFO:root:[SET] : E_register_code => 6909
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_register_code"}
+INFO:root:[GET] : E_register_code
+INFO:root:獲取 [E_register_code] => 6909
+INFO:root:📌 測試 API : 102
+INFO:root:儲存 [E_TOKEN]:718b6299ebf27047908499748e6e9ee7ccbd97e3375e04882289b9f95fd96a55|1|staging
+INFO:root:[SET] : E_TOKEN => 718b6299ebf27047908499748e6e9ee7ccbd97e3375e04882289b9f95fd96a55|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => 718b6299ebf27047908499748e6e9ee7ccbd97e3375e04882289b9f95fd96a55|1|staging
+INFO:root:📌 測試 API : 303
+INFO:root:儲存 [shop_company_logo_image]:https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-company-logo-images/79/790fae772005dd487a32e329e812b369.png
+INFO:root:[SET] : shop_company_logo_image => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-company-logo-images/79/790fae772005dd487a32e329e812b369.png
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => 718b6299ebf27047908499748e6e9ee7ccbd97e3375e04882289b9f95fd96a55|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "shop_company_logo_image"}
+INFO:root:[GET] : shop_company_logo_image
+INFO:root:獲取 [shop_company_logo_image] => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-company-logo-images/79/790fae772005dd487a32e329e812b369.png
+INFO:root:📌 測試 API : 105-1
+INFO:root:儲存 [E_shop_id]:1429
+INFO:root:[SET] : E_shop_id => 1429
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => 718b6299ebf27047908499748e6e9ee7ccbd97e3375e04882289b9f95fd96a55|1|staging
+INFO:root:📌 測試 API : 303
+INFO:root:儲存 [shop_verify_image]:https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-verify-images/7e/7e6bed2178283367fb73e04be5bec43e.png
+INFO:root:[SET] : shop_verify_image => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-verify-images/7e/7e6bed2178283367fb73e04be5bec43e.png
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => 718b6299ebf27047908499748e6e9ee7ccbd97e3375e04882289b9f95fd96a55|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_shop_id"}
+INFO:root:[GET] : E_shop_id
+INFO:root:獲取 [E_shop_id] => 1429
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "shop_verify_image"}
+INFO:root:[GET] : shop_verify_image
+INFO:root:獲取 [shop_verify_image] => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-verify-images/7e/7e6bed2178283367fb73e04be5bec43e.png
+INFO:root:📌 測試 API : 105-3
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:測試 商家審核
+INFO:root:[pages/other/shop_approve_headless.py]
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 商家管理
+INFO:root:點擊: 商家管理
+INFO:root:定位: 店鋪管理
+INFO:root:點擊: 店鋪管理
+INFO:root:定位: 
+INFO:root:輸入: 904140011
+INFO:root:定位: 查詢
+INFO:root:點擊: 查詢
+INFO:root:定位: 審核
+INFO:root:點擊: 審核
+INFO:root:定位: 通過
+INFO:root:點擊: 通過
+INFO:root:定位: 確定
+INFO:root:點擊: 確定
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '遠端主機已強制關閉一個現存的連線。', None, 10054, None)': /session/5d758aeee8eff59994f39fa37a64a70f
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F08336190>: Failed to establish a new connection: [WinError 10061] 無法連線，因為目標電腦拒絕連線。')': /session/5d758aeee8eff59994f39fa37a64a70f
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021F06843810>: Failed to establish a new connection: [WinError 10061] 無法連線，因為目標電腦拒絕連線。')': /session/5d758aeee8eff59994f39fa37a64a70f
+INFO:root:✅ 第 3 次測試 ---
+INFO:root:E_PHONE: {904140012}
+INFO:root:📌 測試 API : 101
+INFO:root:[SET] : E_register_code => 1719
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_register_code"}
+INFO:root:[GET] : E_register_code
+INFO:root:獲取 [E_register_code] => 1719
+INFO:root:📌 測試 API : 102
+INFO:root:儲存 [E_TOKEN]:caab64dfae827084e77450fde3271ae2f98d6d47b87977d8f5b58a386a9468ad|1|staging
+INFO:root:[SET] : E_TOKEN => caab64dfae827084e77450fde3271ae2f98d6d47b87977d8f5b58a386a9468ad|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => caab64dfae827084e77450fde3271ae2f98d6d47b87977d8f5b58a386a9468ad|1|staging
+INFO:root:📌 測試 API : 303
+INFO:root:儲存 [shop_company_logo_image]:https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-company-logo-images/48/4872f2289d74bc619f89806715a071e5.png
+INFO:root:[SET] : shop_company_logo_image => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-company-logo-images/48/4872f2289d74bc619f89806715a071e5.png
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => caab64dfae827084e77450fde3271ae2f98d6d47b87977d8f5b58a386a9468ad|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "shop_company_logo_image"}
+INFO:root:[GET] : shop_company_logo_image
+INFO:root:獲取 [shop_company_logo_image] => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-company-logo-images/48/4872f2289d74bc619f89806715a071e5.png
+INFO:root:📌 測試 API : 105-1
+INFO:root:儲存 [E_shop_id]:1430
+INFO:root:[SET] : E_shop_id => 1430
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => caab64dfae827084e77450fde3271ae2f98d6d47b87977d8f5b58a386a9468ad|1|staging
+INFO:root:📌 測試 API : 303
+INFO:root:儲存 [shop_verify_image]:https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-verify-images/79/799938eaf3ae90d2b5e80692dca494c7.png
+
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:[GET] : E_TOKEN
+INFO:root:獲取 [E_TOKEN] => caab64dfae827084e77450fde3271ae2f98d6d47b87977d8f5b58a386a9468ad|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_shop_id"}
+INFO:root:[GET] : E_shop_id
+INFO:root:獲取 [E_shop_id] => 1430
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "shop_verify_image"}
+INFO:root:[GET] : shop_verify_image
+INFO:root:獲取 [shop_verify_image] => https://next-staging-v210x.res.staging.worky.com.tw/upload/worky/shop-verify-images/79/799938eaf3ae90d2b5e80692dca494c7.png
+INFO:root:📌 測試 API : 105-3
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:About to download new driver from https://msedgedriver.azureedge.net/135.0.3179.73/edgedriver_win64.zip
+INFO:WDM:Driver downloading response is 200
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver has been saved in cache [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73]

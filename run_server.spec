@@ -85,7 +85,7 @@ exe = EXE(
     a.datas,
     [],
     name='run_server',
-    debug=False,
+    debug=True,
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,

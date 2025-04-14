@@ -7,13 +7,11 @@ import streamlit as st
 from api import *
 
 
-def job_publish(base_url, e_phone, work_date, start_time, work_hour, custom_name):
-    """發工作"""
+def e_login(base_url, e_phone):
+    """登入商家"""
     worky_103.e_login(base_url, e_phone)
     worky_104.e_login_confirm(base_url, e_phone)
     worky_106.e_profile(base_url)
-    worky_109.e_job_publish(base_url, work_date, start_time, work_hour, custom_name)
-    return {"status": "pass", "msg": "媒合成功"}
 
 
 def repeat_job_publish(base_url, time, e_phone, work_date, start_time, work_hour, custom_name):
@@ -24,15 +22,16 @@ def repeat_job_publish(base_url, time, e_phone, work_date, start_time, work_hour
     try:
         for i in range(time):
             logging.info("✅ 第 %s 次測試 ---", (i+1))
-            job_publish(base_url, e_phone, work_date, start_time, work_hour, custom_name)
-            return {"status": "pass", "msg": "媒合成功"}
+            e_login(base_url, e_phone)
+            worky_109.e_job_publish(base_url, work_date, start_time, work_hour, custom_name)
+        return {"status": "pass", "msg": "商家發布工作成功"}
     except ValueError as e:
         st.error(f"輸入錯誤 : {e}")
-        return {"status": "fail", "msg": "媒合失敗"}
+        return {"status": "fail", "msg": "商家發布工作失敗"}
     except Exception as e: # pylint: disable = [broad-exception-caught]
         st.error(f"未預期錯誤，檢查 API LOG : {e}")
         traceback.print_exc()
-        return {"status": "fail", "msg": "媒合失敗"}
+        return {"status": "fail", "msg": "商家發布工作失敗"}
 
 if __name__ == "__main__":
     BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
