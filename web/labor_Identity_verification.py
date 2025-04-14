@@ -1,10 +1,8 @@
 """ [後台] 打工夥伴審核通過 """
 
 import time
-import logging
 from utils.action_click import ClickAction
 from utils.action_input import InputAction
-from utils.cleanup_edge import cleanup_edge_processes
 from web.webdriver_option import launch_edge_driver
 
 
@@ -14,14 +12,14 @@ def labor_verify(background, labor_phone):
     click_action = ClickAction(driver)
     input_action = InputAction(driver)
     try:
-        logging.info("打工夥伴審核")
+        print("打工夥伴審核")
         # 打開網頁
         driver.get(background)
         # 登入
         input_action.input_by_send_key("ID", "loginform-username", "brandon.lee")
         input_action.input_by_send_key("ID", "loginform-password", "brandon7068l7")
         click_action.click_by_locating("CSS_SELECTOR", "button[type='submit']", "登入")
-        # 點擊 "Home" > "商家管理的列表" > "店舖管理"
+        # 點擊 "Home"
         click_action.click_by_locating(
             "CSS_SELECTOR", "a.nav-link[aria-controls='sidebar']", "home"
         )
@@ -32,6 +30,7 @@ def labor_verify(background, labor_phone):
         click_action.click_by_locating(
             "Xpath", "//p[normalize-space(text())='打工夥伴管理']", "打工夥伴管理"
         )
+        print(f"輸入打工帳號: {labor_phone}")
         # 輸入 電話號碼並查詢
         input_action.input_by_send_key("ID", "_f-username", labor_phone)
         click_action.click_by_locating("ID", "w2", "查詢")
@@ -44,6 +43,7 @@ def labor_verify(background, labor_phone):
             "ID", "btnValidateSubmit", "提交認證"
         )
         time.sleep(1)
+        print("打工通過認證")
         driver.quit()
 
     except Exception as e:
@@ -51,14 +51,6 @@ def labor_verify(background, labor_phone):
         raise e
 
 if __name__ == "__main__":
-    try:
-        # 在啟動 WebDriver 之前清理進程
-        cleanup_edge_processes()
-        URL = "https://next-staging-v210x.backend.staging.worky.com.tw"
-        PHONE = "904140001"
-        labor_verify(URL, PHONE)
-    finally:
-        # 在腳本結束時清理所有 Edge 相關進程，確保環境乾淨
-        print("正在清理測試環境...")
-        cleanup_edge_processes()
-        print("✅ 測試環境已清理完畢。")
+    URL = "https://next-staging-v210x.backend.staging.worky.com.tw"
+    PHONE = "904140001"
+    labor_verify(URL, PHONE)

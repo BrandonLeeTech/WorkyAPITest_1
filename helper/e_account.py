@@ -12,9 +12,9 @@ def setting_account(base_url, e_phone):
     worky_103.e_login(base_url, e_phone)
     worky_104.e_login_confirm(base_url, e_phone)
     worky_161.e_credit_card_bind(base_url)
-    credit_card_bind_h()
     worky_171.e_invoice_update(base_url)
     worky_173.e_bank_account_update(base_url)
+    credit_card_bind_h()
 
 
 def repeat_setting_account(base_url, time, e_phone):
@@ -41,7 +41,7 @@ def repeat_setting_account(base_url, time, e_phone):
 
 if __name__ == "__main__":
     BASE_URL = "https://next-staging-v210x.api.staging.worky.com.tw"
-    E_PHONE = "903310010"
-    TIME = 2
+    E_PHONE = "0904140004"
+    TIME = 1
 
-    repeat_setting_account(BASE_URL, E_PHONE, TIME)
+    repeat_setting_account(BASE_URL, TIME, E_PHONE)

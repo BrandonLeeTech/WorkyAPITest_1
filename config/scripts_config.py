@@ -27,8 +27,7 @@ SCRIPTS = {
             "base_url": COMMON_URL,
             "time": GENERATE_TIME,
             "e_phone": "text",
-            "e_name": "text",
-            "e_shop": "text"
+            "e_name": "text"
         }
     },
     "商家_帳務設置": {

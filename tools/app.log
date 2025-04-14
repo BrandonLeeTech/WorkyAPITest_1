@@ -675,3 +675,155 @@ INFO:WDM:Driver downloading response is 200
 INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
 INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
 INFO:WDM:Driver has been saved in cache [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73]
+INFO:root:✅ 第 1 次測試 ---
+INFO:root:E_PHONE: {2}
+INFO:root:📌 測試 API : 103
+INFO:root:✅ 第 1 次測試 ---
+INFO:root:E_PHONE: {1}
+INFO:root:📌 測試 API : 103
+INFO:root:✅ 第 1 次測試 ---
+INFO:root:E_PHONE: {904140004}
+INFO:root:📌 測試 API : 103
+INFO:root:儲存 [E_login_code]:3621
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_login_code"}
+INFO:root:獲取 [E_login_code] => 3621
+INFO:root:📌 測試 API : 104
+INFO:root:儲存 [E_TOKEN]:8a6dc1811b5592f9cbc0002c380d8a49c4d19463355aebfb1ba8c1b4310e1de0|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => 8a6dc1811b5592f9cbc0002c380d8a49c4d19463355aebfb1ba8c1b4310e1de0|1|staging
+INFO:root:📌 測試 API : 161
+INFO:root:儲存 [E_credit_card_url]:https://payment-stage.funpoint.com.tw/MerchantMember/TradeWithBindingCardID?MerchantID=1000060&MerchantMemberID=1000060E0000001560S&ServerReplyURL=https%3A%2F%2Fnext-staging-v210x.pay.staging.worky.com.tw%2Ffun-point%2Fbind-credit-card-notify&ClientRedirectURL=https%3A%2F%2Fnext-staging-v210x.pay.staging.worky.com.tw%2Ffun-point%2Fbind-credit-card-callback&MerchantTradeNo=WB250414180000004S&MerchantTradeDate=2025%2F04%2F14+18%3A19%3A30&TotalAmount=6&TradeDesc=%25E7%25B6%2581%25E5%25AE%259A%25E4%25BF%25A1%25E7%2594%25A8%25E5%258D%25A1&stage=0&CheckMacValue=8A9DE2D281D8756C3FAE4D8D2C03015CCB09C50C1A7946B1EF9C35BF6BCD0482
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_credit_card_url"}
+INFO:root:獲取 [E_credit_card_url] => https://payment-stage.funpoint.com.tw/MerchantMember/TradeWithBindingCardID?MerchantID=1000060&MerchantMemberID=1000060E0000001560S&ServerReplyURL=https%3A%2F%2Fnext-staging-v210x.pay.staging.worky.com.tw%2Ffun-point%2Fbind-credit-card-notify&ClientRedirectURL=https%3A%2F%2Fnext-staging-v210x.pay.staging.worky.com.tw%2Ffun-point%2Fbind-credit-card-callback&MerchantTradeNo=WB250414180000004S&MerchantTradeDate=2025%2F04%2F14+18%3A19%3A30&TotalAmount=6&TradeDesc=%25E7%25B6%2581%25E5%25AE%259A%25E4%25BF%25A1%25E7%2594%25A8%25E5%258D%25A1&stage=0&CheckMacValue=8A9DE2D281D8756C3FAE4D8D2C03015CCB09C50C1A7946B1EF9C35BF6BCD0482
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:測試 信用卡設定
+INFO:root:[pages/other/credit_card_headless.py]
+INFO:root:定位: 
+INFO:root:輸入: 4311958888888888
+INFO:root:定位: 月份
+INFO:root:點擊: 月份
+INFO:root:定位: 10月
+INFO:root:點擊: 10月
+INFO:root:定位: 年份
+INFO:root:點擊: 年份
+INFO:root:定位: 2031年
+INFO:root:點擊: 2031年
+INFO:root:定位: 
+INFO:root:輸入: 222
+INFO:root:定位: 送出
+INFO:root:點擊: 送出
+INFO:root:定位: 送出
+INFO:root:點擊: 送出
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => 8a6dc1811b5592f9cbc0002c380d8a49c4d19463355aebfb1ba8c1b4310e1de0|1|staging
+INFO:root:📌 測試 API : 171
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => 8a6dc1811b5592f9cbc0002c380d8a49c4d19463355aebfb1ba8c1b4310e1de0|1|staging
+INFO:root:📌 測試 API : 173
+INFO:root:✅ 第 1 次測試 ---
+INFO:root:E_PHONE: {904140004}
+INFO:root:📌 測試 API : 103
+INFO:root:儲存 [E_login_code]:9604
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_login_code"}
+INFO:root:獲取 [E_login_code] => 9604
+INFO:root:📌 測試 API : 104
+INFO:root:儲存 [E_TOKEN]:190f9a354c7f7051ea828ffeb5e0f031bde183fe4d910d2d441ee26477285faf|1|staging
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => 190f9a354c7f7051ea828ffeb5e0f031bde183fe4d910d2d441ee26477285faf|1|staging
+INFO:root:📌 測試 API : 161
+INFO:root:儲存 [E_credit_card_url]:https://payment-stage.funpoint.com.tw/MerchantMember/TradeWithBindingCardID?MerchantID=1000060&MerchantMemberID=1000060E0000001560S&ServerReplyURL=https%3A%2F%2Fnext-staging-v210x.pay.staging.worky.com.tw%2Ffun-point%2Fbind-credit-card-notify&ClientRedirectURL=https%3A%2F%2Fnext-staging-v210x.pay.staging.worky.com.tw%2Ffun-point%2Fbind-credit-card-callback&MerchantTradeNo=WB250414180000005S&MerchantTradeDate=2025%2F04%2F14+18%3A20%3A38&TotalAmount=6&TradeDesc=%25E7%25B6%2581%25E5%25AE%259A%25E4%25BF%25A1%25E7%2594%25A8%25E5%258D%25A1&stage=0&CheckMacValue=A578CE4B039DDEDB05961AAFBB98DC21C487897F5E67233FDECEAE9CFE91DC1D
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_credit_card_url"}
+INFO:root:獲取 [E_credit_card_url] => https://payment-stage.funpoint.com.tw/MerchantMember/TradeWithBindingCardID?MerchantID=1000060&MerchantMemberID=1000060E0000001560S&ServerReplyURL=https%3A%2F%2Fnext-staging-v210x.pay.staging.worky.com.tw%2Ffun-point%2Fbind-credit-card-notify&ClientRedirectURL=https%3A%2F%2Fnext-staging-v210x.pay.staging.worky.com.tw%2Ffun-point%2Fbind-credit-card-callback&MerchantTradeNo=WB250414180000005S&MerchantTradeDate=2025%2F04%2F14+18%3A20%3A38&TotalAmount=6&TradeDesc=%25E7%25B6%2581%25E5%25AE%259A%25E4%25BF%25A1%25E7%2594%25A8%25E5%258D%25A1&stage=0&CheckMacValue=A578CE4B039DDEDB05961AAFBB98DC21C487897F5E67233FDECEAE9CFE91DC1D
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:測試 信用卡設定
+INFO:root:[pages/other/credit_card_headless.py]
+INFO:root:定位: 
+INFO:root:輸入: 4311957777777777
+INFO:root:定位: 月份
+INFO:root:點擊: 月份
+INFO:root:定位: 10月
+INFO:root:點擊: 10月
+INFO:root:定位: 年份
+INFO:root:點擊: 年份
+INFO:root:定位: 2031年
+INFO:root:點擊: 2031年
+INFO:root:定位: 
+INFO:root:輸入: 222
+INFO:root:定位: 送出
+INFO:root:點擊: 送出
+INFO:root:定位: 送出
+INFO:root:點擊: 送出
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => 190f9a354c7f7051ea828ffeb5e0f031bde183fe4d910d2d441ee26477285faf|1|staging
+INFO:root:📌 測試 API : 171
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_TOKEN"}
+INFO:root:獲取 [E_TOKEN] => 190f9a354c7f7051ea828ffeb5e0f031bde183fe4d910d2d441ee26477285faf|1|staging
+INFO:root:📌 測試 API : 173
+INFO:root:送出指令: {"action": "GET_DATA", "tag": "E_credit_card_url"}
+INFO:root:獲取 [E_credit_card_url] => https://payment-stage.funpoint.com.tw/MerchantMember/TradeWithBindingCardID?MerchantID=1000060&MerchantMemberID=1000060E0000001560S&ServerReplyURL=https%3A%2F%2Fnext-staging-v210x.pay.staging.worky.com.tw%2Ffun-point%2Fbind-credit-card-notify&ClientRedirectURL=https%3A%2F%2Fnext-staging-v210x.pay.staging.worky.com.tw%2Ffun-point%2Fbind-credit-card-callback&MerchantTradeNo=WB250414180000005S&MerchantTradeDate=2025%2F04%2F14+18%3A20%3A38&TotalAmount=6&TradeDesc=%25E7%25B6%2581%25E5%25AE%259A%25E4%25BF%25A1%25E7%2594%25A8%25E5%258D%25A1&stage=0&CheckMacValue=A578CE4B039DDEDB05961AAFBB98DC21C487897F5E67233FDECEAE9CFE91DC1D
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:測試 信用卡設定
+INFO:root:[pages/other/credit_card_headless.py]
+INFO:root:定位: 
+ERROR:root:[301] 無法定位元素的 ID: CardPart1 
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:測試 商家審核
+INFO:root:[pages/other/shop_approve_headless.py]
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 商家管理
+INFO:root:點擊: 商家管理
+INFO:root:定位: 店鋪管理
+INFO:root:點擊: 店鋪管理
+INFO:root:定位: 
+INFO:root:輸入: 904120001
+INFO:root:定位: 查詢
+INFO:root:點擊: 查詢
+INFO:root:定位: 審核
+INFO:root:點擊: 審核
+INFO:root:定位: 通過
+ERROR:root:[301] 無法定位元素的 Xpath: //button[@data-bs-target='#approveModal'] 
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Get LATEST edgedriver version for Edge 135.0.3179
+INFO:WDM:Driver [C:\Users\brandon.lee\.wdm\drivers\edgedriver\win64\135.0.3179.73\msedgedriver.exe] found in cache
+INFO:root:測試 商家審核
+INFO:root:[pages/other/shop_approve_headless.py]
+INFO:root:定位: 
+INFO:root:輸入: brandon.lee
+INFO:root:定位: 
+INFO:root:輸入: brandon7068l7
+INFO:root:定位: 登入
+INFO:root:點擊: 登入
+INFO:root:定位: home
+INFO:root:點擊: home
+INFO:root:定位: 商家管理
+INFO:root:點擊: 商家管理
+INFO:root:定位: 店鋪管理
+INFO:root:點擊: 店鋪管理
+INFO:root:定位: 
+INFO:root:輸入: 904120001
+INFO:root:定位: 查詢
+INFO:root:點擊: 查詢
+INFO:root:定位: 審核
+INFO:root:點擊: 審核
+INFO:root:定位: 通過
+ERROR:root:[301] 無法定位元素的 Xpath: //button[@data-bs-target='#approveModal'] 

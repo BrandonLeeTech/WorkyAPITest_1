@@ -12,6 +12,7 @@ datas = [
     ('app.log', '.'),
     ('config/*.py', 'config'),
     ("C:/Users/brandon.lee/.conda/envs/py311/Lib/site-packages/streamlit/runtime", "streamlit/runtime"),
+    ("C:/Users/brandon.lee/.conda/envs/py311/python311.dll", "."),
 ]
 
 datas += collect_data_files("streamlit")
@@ -62,7 +63,7 @@ hidden_imports = [
 a = Analysis(
     ['run_server.py'],
     pathex=['.'],
-    binaries=[],
+    binaries=[("C:/Users/brandon.lee/.conda/envs/py311/python311.dll", ".")],
     datas=datas,
     hiddenimports=hidden_imports,
     hookspath=[],
@@ -85,9 +86,10 @@ exe = EXE(
     a.datas,
     [],
     name='run_server',
-    debug=True,
+    debug=False,
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
     console=True,
+    onefile=True,
 )
